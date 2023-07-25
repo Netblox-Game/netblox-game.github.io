@@ -9,34 +9,55 @@
          This makes it easier to make new pages for your site. -->
     <link rel="shortcut icon" type="image/jpg" href="img/Logo.png"/>
     <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      * {
+        box-sizing: border-box;
+      }
       .topnav {
         background-color: #8173be;
-        width: 47rem;
+        width: 50%;
         color: white;
         overflow: hidden; 
-        }
+      }
+      .RectContainer {
+        background-color: rgb(228,228,228);
+        width: 50%;
+        height: 100%;
+        color: white;
+        overflow: hidden; 
+      }
     </style>
   </head>
   <body style="margin:0;padding:0;background: url(img/WebsiteWallpaper.png);background-repeat: no-repeat;background-size: cover;">
     
     <div style="display:flex;flex-flow: column;width:100%;align-items:center;">
-      <img src="img/WebsiteUpper.png" style="width:47rem;"/>
+      <img src="img/WebsiteUpper.png" style="width:50%;"/>
       <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a class="active" href="index.html">Games</a>
       </div>
-      <div style="display: flex; flex-flow: row nowrap; justify-content: center;">
-        <div style="padding:2rem">
-          <font face="Comic Sans MS" size="5px" color="#FFFFFF" style="padding:2rem">
-            Welcome to the Netblox Home Page! Here you can view the <br> available games you can join!
-          </font>
+      <div class="RectContainer">
+        <div style="display: flex; flex-flow: row wrap; justify-content: center;">
+        <img src="img/Logo.png" style="width:15rem"/>
+          <div style="padding:2rem">
+            <font face="Comic Sans MS" size="5px" color="#000000">Currently, netblox does not have a client. We are working around the clock to make the client, and will change this page when finished. We are sorry for the inconvenience.
+            </font>
+          </div>
+        </div>
+        <hr>
+        <div style="width:100%; text-align:center;padding:3rem 0;font-size:1rem;font-weight:200;">
+          <font face="Arial" size="2px" color="#000000">2023 Jahoobas. We are not associated with ROBLOX Corporation, or any other company for that matter.</font>
         </div>
       </div>
-    </div>
-    
-    
-    <div style="width:100%; text-align:center;padding:3rem 0;font-size:1rem;font-weight:200;">
-      <font face="Arial" size="2px" color="#FFFFFF">2023 Jahoobas</font>
+      
     </div>
   </body>
 </html>
